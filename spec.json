@@ -1,0 +1,13 @@
+{
+  "nixpkgs": {
+    "enabled": 1,
+    "hidden": false,
+    "keepnr": 1,
+    "checkinterval": 300,
+    "schedulingshares": 100,
+    "description": "Test project for eval-time failures",
+    "enableemail": false,
+    "type": 1,
+    "flake": "github:bellroy/hydra-fail"
+  }
+}
