@@ -20,7 +20,7 @@
     };
 
     hydraJobs = {
-      #x86_64-darwin = inputs.self.packages.x86_64-darwin.default;
+      x86_64-darwin = inputs.self.packages.x86_64-darwin.default;
       x86_64-linux = inputs.self.packages.x86_64-linux.default;
     };
   };
