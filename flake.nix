@@ -20,6 +20,15 @@
     };
 
     hydraJobs = {
+      aggregate = (import inputs.nixpkgs { system = "x86_64-linux"; }).runCommand "aggregate"
+      {
+        _hydraAggregate = true;
+        constituents = [
+          "x86_64-darwin"
+          "x86_64-linux"
+        ];
+      }
+      "touch $out";
       x86_64-darwin = inputs.self.packages.x86_64-darwin.default;
       x86_64-linux = inputs.self.packages.x86_64-linux.default;
     };
